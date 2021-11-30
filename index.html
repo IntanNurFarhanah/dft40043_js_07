@@ -1,12 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculate Grade</title>
+
+    <script src="script.js"></script>
 </head>
+
 <body>
-    
+
+    <h1>CALCULATE GRADE</h1>
+
+    <table border="2">
+
+        <form>
+
+            <tr bgcolor=#c2c2a3>
+                <th>SUBJECT</th>
+                <th>MARK</th>
+                <th>GRADE</th>
+            </tr>
+
+            <tr align="center">
+                <td>BM 1</td>
+                <td> <input type="number" name="mark1" id="mark1" onchange="gred(this.value,'bm1')"
+                        onkeyup="gred(this.value,'bm1')" required /></td>
+                <td width="8%" align="center" id="bm1"></td>
+            </tr>
+
+            <tr align="center">
+                <td>BM 2</td>
+                <td> <input type="number" name="mark2" id="mark2" onchange="gred(this.value,'bm2')"
+                        onkeyup="gred(this.value,'bm2')" required /></td>
+                <td width="8%" align="center" id="bm2"></td>
+            </tr>
+
+            <tr align="center">
+                <td>BI</td>
+                <td> <input type="number" name="mark3" id="mark3" onchange="gred(this.value,'bi')"
+                        onkeyup="gred(this.value,'bi')" required /></td>
+                <td width="8%" align="center" id="bi"></td>
+            </tr>
+
+            <tr align="center">
+                <td>SAINS</td>
+                <td> <input type="number" name="mark4" id="mark4" onchange="gred(this.value,'sains')"
+                        onkeyup="gred(this.value,'sains')" required /></td>
+                <td width="8%" align="center" id="sains"></td>
+            </tr>
+
+            <tr align="center">
+                <td>MATH</td>
+                <td> <input type="number" name="mark5" id="mark5" onchange="gred(this.value,'math')"
+                        onkeyup="gred(this.value,'math')" required /></td>
+                <td width="8%" align="center" id="math"></td>
+            </tr>
+
+        </form>
+
+    </table>
+
 </body>
+
 </html>
